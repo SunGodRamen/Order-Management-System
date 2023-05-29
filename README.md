@@ -18,8 +18,11 @@ The Order Management System will handle product orders from customers and manage
 You can download and install Apache Kafka on your local system. Instructions for setting up Kafka can be found in the official Apache Kafka documentation.
 
 # Create/Clone Spring Boot Applications
-Create two separate Spring Boot applications for Order Service and Inventory Service.
-You can use the Spring Initializer to create the projects with needed dependencies. For this project, include "Spring Web", "Spring for Apache Kafka", and "Spring Data JPA" for both applications.
+Initialize the submodules;
+git@github.com:SunGodRamen/Order-Service.git
+git@github.com:SunGodRamen/Inventory-Service.git
+
+git submodule init
 
 # Implement the Order Service
 This service should expose endpoints to create, update, and cancel orders.

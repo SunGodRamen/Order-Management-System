@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+
+  order-service:
+    build:
+      context: ./Order-Service
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    depends_on:
+      - inventory-service
+
+  inventory-service:
+    build:
+      context: ./Inventory-Service
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
