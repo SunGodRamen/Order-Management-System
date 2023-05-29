@@ -24,8 +24,8 @@ You can use the Spring Initializer to create the projects with needed dependenci
 # Implement the Order Service
 This service should expose endpoints to create, update, and cancel orders.
 When an order is created, the service should send a message to a Kafka topic named orders.
-Implement the Inventory Service
 
+# Implement the Inventory Service
 This service should listen for messages on the orders topic.
 Based on the order details, the Inventory Service should update its state (deduct the ordered product from inventory, for example).
 If an action is successful, the service should send a message to a Kafka topic named inventory.
